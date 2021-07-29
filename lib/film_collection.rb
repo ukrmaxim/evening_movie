@@ -11,8 +11,7 @@ class FilmCollection
   end
 
   def self.from_url
-    html = URI.open(URL, &:read)
-    doc = Nokogiri::HTML(html)
+    doc = Nokogiri::HTML(URI.open(URL, &:read))
 
     films = doc.css('div.list-content-item-inner').map do |node|
       title = node.at('.name').text
