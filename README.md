@@ -33,7 +33,7 @@ For gems installation, on command line/terminal, go to the directory, where you 
 following command:
 
 ```ruby
-bundle install
+bundle exec install
 ```
 
 To run the application, on command line/terminal, go to the directory, where you unpacked the archive and type in the
